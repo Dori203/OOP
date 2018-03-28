@@ -1,0 +1,36 @@
+dori203
+
+
+=============================
+=      File description     =
+=============================
+Book.java - contains the Book class for books in the library.
+Patron.java - contains the Patron class for borrowers of books in the library.
+Library.java - contains the library class for managing book, patrons, and the current state of books being
+ borrowed by patrons.
+
+
+=============================
+=          Design           =
+=============================
+I implemented the different classes in a way that the Library class is handling all the relations between
+the different objects, by a few arrays. The arrays contain book objects and patron objects, and the ID's for
+book and patrons are given by the index of the books and the patrons in their appropriate array.
+In that sense, it will not be possible to reduce a book or a patron from the library after they have been
+added (a feature that was not requested), but it is very easy to determine a book/patrons ID, and check
+weather an ID is eligible / already exists.
+
+This implementation logic makes it possible to operate more than one library, with the same books and patrons,
+without interrupting the activity of another library.
+
+
+=============================
+=  Implementation details   =
+=============================
+As explained before, the implementation is mostly occurring in the Library class, that handles all other
+classes.
+
+=============================
+=    Answers to questions   =
+=============================
+
